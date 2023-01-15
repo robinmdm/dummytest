@@ -22,7 +22,53 @@
 
 # # Output: {"a": 50, "b": 12, "c": 5, "d": 4}
 
-# your code goes here
+result = dict()
+
+result1 = []
+
+result2 = []
+
+data = [1, [12, 'a'], ['b', 'c', 4], [5, 'd', 'd'], [50, 5]]
+
+for i in data:
+
+    if type(i) == list:
+
+        for j in i:
+
+            if type(j) == int:
+
+                result1.append(j)
+
+            else:
+
+                result2.append(j)
+
+    else:
+        result1.append(i)
+
+sorted(result1)
+
+sorted(result2)
+
+min = 0
+minArray = ""
+
+if len(result1) < len(result2):
+    min = len(result1)
+    minArray = 'result1'
+else:
+    min = len(result2)
+    minArray = 'result2'
+
+for i in range(min):
+    if minArray == 'result1':
+        result[result1[i]] = result2[i]
+    else:
+        result[result2[i]] = result1[i]
+
+print(result)
+
 
 # ------------------------------------------------------------------------------------------
 
@@ -35,7 +81,45 @@
 # # output: 3 4 5
 #           6 8 10
 
-# your code goes here
+output = []
+
+filteredOutput = []
+
+finalOutput = []
+
+for i in range(1, 11):
+
+    for j in range(1, 11):
+
+        for k in range(1, 11):
+
+            a = i**2
+
+            b = j**2
+
+            c = k**2
+
+            if a + b == c:
+
+                output.append([i, j, k])
+
+
+for i in range(len(output)):
+    filteredOutput.append(sorted(output[i]))
+
+for i in filteredOutput:
+
+    if i not in finalOutput:
+
+        finalOutput.append(i)
+
+for i in finalOutput:
+
+    for j in i:
+
+        print(str(j), end=" ")
+
+    print()
 
 # ---------------------------------------------------------------------------------------------
 
@@ -67,7 +151,23 @@
 # &        &
 # &         &
 
-# your code goes here
+n = int(input('Enter a number...'))
+
+separatorIndex = 1
+
+for i in range(n):
+
+    for j in range(n+1):
+
+        if int(j) == int(0):
+            print('&', end="")
+        elif int(j) == int(separatorIndex):
+            print('&', end="")
+        else:
+            print(' ', end="")
+
+    print()
+    separatorIndex += 1
 
 # --------------------------------------------------------------------------------------------------
 
