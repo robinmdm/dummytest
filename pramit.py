@@ -93,12 +93,12 @@
 # your code goes here
 
 # import math
-# for i in range(1, 11):
-#     for j in range(i+1, 11):
+# for i in range(1, 100):
+#     for j in range(i+1, 100):
 #         a = i**2+j**2
 #         b = math.sqrt(a)
 #         if b - int(b) == 0:
-#             if b <= 10:
+#             if b <= 100:
 #                 print(i, j, int(b))
 
 
@@ -172,14 +172,14 @@
 
 # your code goes here
 
-n = int(input("Enter a number: "))
+# n = int(input("Enter a number: "))
 
-for i in range(1, n+1):
-    for m in range(0, n-i):
-        print(" ", end="")
+# for i in range(1, n+1):
+#     for m in range(0, n-i):
+#         print(" ", end="")
 
-    for n in range(1, i+1):
-        print(n, end="")
-    print("")
-    # for o in range(i-1, 0, -1):
-    #     print(o, end="")
+#     for n in range(1, i+1):
+#         print(n, end="")
+#     print("")
+#     # for o in range(i-1, 0, -1):
+#     #     print(o, end="")
