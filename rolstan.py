@@ -35,7 +35,45 @@
 # # output: 3 4 5
 #           6 8 10
 
-# your code goes here
+output = []
+
+filteredOutput = []
+
+finalOutput = []
+
+for i in range(1, 11):
+
+    for j in range(1, 11):
+
+        for k in range(1, 11):
+
+            a = i**2
+
+            b = j**2
+
+            c = k**2
+
+            if a + b == c:
+
+                output.append([i, j, k])
+
+
+for i in range(len(output)):
+    filteredOutput.append(sorted(output[i]))
+
+for i in filteredOutput:
+
+    if i not in finalOutput:
+
+        finalOutput.append(i)
+
+for i in finalOutput:
+
+    for j in i:
+
+        print(str(j), end=" ")
+
+    print()
 
 # ---------------------------------------------------------------------------------------------
 
@@ -67,7 +105,23 @@
 # &        &
 # &         &
 
-# your code goes here
+n = int(input('Enter a number...'))
+
+separatorIndex = 1
+
+for i in range(n):
+
+    for j in range(n+1):
+
+        if int(j) == int(0):
+            print('&', end="")
+        elif int(j) == int(separatorIndex):
+            print('&', end="")
+        else:
+            print(' ', end="")
+
+    print()
+    separatorIndex += 1
 
 # --------------------------------------------------------------------------------------------------
 
