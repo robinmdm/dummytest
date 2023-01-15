@@ -22,7 +22,53 @@
 
 # # Output: {"a": 50, "b": 12, "c": 5, "d": 4}
 
-# your code goes here
+result = dict()
+
+result1 = []
+
+result2 = []
+
+data = [1, [12, 'a'], ['b', 'c', 4], [5, 'd', 'd'], [50, 5]]
+
+for i in data:
+
+    if type(i) == list:
+
+        for j in i:
+
+            if type(j) == int:
+
+                result1.append(j)
+
+            else:
+
+                result2.append(j)
+
+    else:
+        result1.append(i)
+
+sorted(result1)
+
+sorted(result2)
+
+min = 0
+minArray = ""
+
+if len(result1) < len(result2):
+    min = len(result1)
+    minArray = 'result1'
+else:
+    min = len(result2)
+    minArray = 'result2'
+
+for i in range(min):
+    if minArray == 'result1':
+        result[result1[i]] = result2[i]
+    else:
+        result[result2[i]] = result1[i]
+
+print(result)
+
 
 # ------------------------------------------------------------------------------------------
 
