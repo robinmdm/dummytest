@@ -2,7 +2,7 @@
 #   - official python documentation
 #   - w3schools python
 
-#---------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------
 
 # Challenge 1:
 
@@ -14,6 +14,27 @@
 
 # your code goes here
 
+# XXXXXXXXXXXXXXXXX   DOES NOT WORK DO NOT READ   XXXXXXX
+
+
+# names = [['PRAMIT'], ['SHUBHAM'], ['SWETHA'],
+#          ['ROLSTAN'], ['PRADEEP'], ['ROBIN']]
+# n = None
+# lst1 = []
+# for l in names:
+#     if n is None:
+#         n = []
+#         n.append(l)
+#         b = n[0]
+#         c = b[0]
+#     else:
+#         a = l[0]
+#         if a == c:
+#             lst1.append(l)
+#             n = None
+
+# print(lst1)
+
 # ---------------------------------------------------------------------------------------
 
 # Challenge 2:
@@ -23,6 +44,40 @@
 # # Output: {"a": 50, "b": 12, "c": 5, "d": 4}
 
 # your code goes here
+
+# data = [1, [12, 'a'], ['b', 'c', 4], [5, 'd', 'd'], [50, 5]]
+# data1 = []
+# for i in data:
+#     if isinstance(i, list) == True:
+#         for j in i:
+#             data1.append(j)
+#     else:
+#         data1.append(i)
+
+# set1 = set(data1)
+# data1 = list(set1)
+# lst0 = []
+# lst1 = []
+
+# for i in data1:
+#     if isinstance(i, int) == True:
+#         continue
+#     else:
+#         lst0.append(i)
+
+# set2 = set(lst0)
+# set3 = set1-set2
+# lst1 = list(set3)
+# lst1.sort(reverse=True)
+# lst0.sort()
+
+# dict = {}
+
+# for i in range(0, 4):
+#     dict[lst0[i]] = lst1[i]
+
+# print(dict)
+
 
 # ------------------------------------------------------------------------------------------
 
@@ -36,6 +91,16 @@
 #           6 8 10
 
 # your code goes here
+
+# import math
+# for i in range(1, 11):
+#     for j in range(i+1, 11):
+#         a = i**2+j**2
+#         b = math.sqrt(a)
+#         if b - int(b) == 0:
+#             if b <= 10:
+#                 print(i, j, int(b))
+
 
 # ---------------------------------------------------------------------------------------------
 
@@ -69,6 +134,16 @@
 
 # your code goes here
 
+# n = int(input("Enter value: "))
+# j = 0
+# for i in range(0, n):
+#     print("#", end=" ")
+#     print("&", end="")
+#     for k in range(0, j):
+#         print(" ", end="")
+#     j += 1
+#     print("&")
+
 # --------------------------------------------------------------------------------------------------
 
 # challenge 5
@@ -77,7 +152,7 @@
 
 # For input 5, the output will be:
 
-#         1 
+#         1
 #       1 2 1
 #     1 2 3 2 1
 #   1 2 3 4 3 2 1
@@ -85,7 +160,7 @@
 
 # For input 9, the output will be:
 
-#                 1 
+#                 1
 #               1 2 1
 #             1 2 3 2 1
 #           1 2 3 4 3 2 1
@@ -96,3 +171,15 @@
 # 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
 
 # your code goes here
+
+n = int(input("Enter a number: "))
+
+for i in range(1, n+1):
+    for m in range(0, n-i):
+        print(" ", end="")
+
+    for n in range(1, i+1):
+        print(n, end="")
+    print("")
+    # for o in range(i-1, 0, -1):
+    #     print(o, end="")
