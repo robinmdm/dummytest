@@ -24,3 +24,33 @@
 
 # # output: 3 4 5
 #           6 8 10
+
+# Challenge 4:
+
+# Write a program using nested loops to draw this pattern.
+
+# User will enter the number of rows.
+
+# For, given input 6. The output will be:
+
+# &&
+# & &
+# &  &
+# &   &
+# &    &
+# &     &
+
+# For, given input 10. The output will be:
+
+# &&
+# & &
+# &  &
+# &   &
+# &    &
+# &     &
+# &      &
+# &       &
+# &        &
+# &         &
+
+# your code goes here
