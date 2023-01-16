@@ -172,14 +172,25 @@
 
 # your code goes here
 
+import math
 n = int(input("Enter a number: "))
 
-for i in range(1, n+1):
-    for m in range(0, n-i):
-        print(" ", end="")
+lst = []
 
-    for n in range(1, i+1):
-        print(n, end="")
-    print("")
-    # for o in range(i-1, 0, -1):
-    #     print(o, end="")
+for i in range(1, n+1):
+    if i == 1:
+        lst.append(i)
+    else:
+        str1 = ""
+        for j in range(1, i+1):
+            k = str(j)
+            str1 += k
+        s1 = str1[::-1]
+        s2 = s1[1:]
+        s3 = str1+s2
+        t = int(s3)
+        lst.append(t)
+
+for i in range(0, n):
+    print(" "*(n-i), end="")
+    print(lst[i])
