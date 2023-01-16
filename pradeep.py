@@ -12,22 +12,22 @@
 
 # # Output: [["PRADEEP", "PRAMIT"], ["ROBIN", "ROLSTAN"], ["SHUBHAM", "SWETHA"]]
 # your code goes here
-# names = [['PRAMIT'], ['SHUBHAM'], ['SWETHA'], ['ROLSTAN'], ['PRADEEP'], ['ROBIN']]
-# output = []
-# condition = True
-# temp = []
-# for i in range(0,(len(names))):
-#     for j in range(0, len(names)):        
-#         if((names[i][0][0] == names [j][0][0]) and (i != j)):
-#             temp = []
-#             temp.append(names[i][0])
-#             temp.append(names[j][0])
-#             output.append(temp)
-# output = sorted(output)
-# final = []
-# for i in range(0,len(output),2):
-#     final.append(output[i])
-# print(final)
+names = [['PRAMIT'], ['SHUBHAM'], ['SWETHA'], ['ROLSTAN'], ['PRADEEP'], ['ROBIN']]
+output = []
+condition = True
+temp = []
+for i in range(0,(len(names))):
+    for j in range(0, len(names)):        
+        if((names[i][0][0] == names [j][0][0]) and (i != j)):
+            temp = []
+            temp.append(names[i][0])
+            temp.append(names[j][0])
+            output.append(temp)
+output = sorted(output)
+final = []
+for i in range(0,len(output),2):
+    final.append(output[i])
+print(final)
 
 
 
@@ -91,9 +91,9 @@
 
 # ls = []
 # mls = []
-# for i in range (1,11):
-#     for j in range(1,11):
-#         for k in range(1,11):
+# for i in range (1,100):
+#     for j in range(1,100):
+#         for k in range(1,100):
 #             if j**2 + k**2 == i**2:
 #                 ls = []
 #                 ls.append(i)
@@ -186,23 +186,23 @@
 # 1 2 3 4 5 6 7 8 9 8 7 6 5 4 3 2 1
 
 # your code goes here
-str = ""
-n = int(input("enter the number of rows"))
+# str = ""
+# n = int(input("enter the number of rows"))
 
-print(str)
+# print(str)
 
 
 
-s = n
-for i in range(0,n):
-    j = 0
-    midstr = ""
-    for j in range (0,i):
-        j.__
+# s = n
+# for i in range(0,n):
+#     j = 0
+#     midstr = ""
+#     for j in range (0,i):
+#         j.__
     
 
 
 
 
-    print(" "*s-1,i," "*s-1)
-    s = s - 1
+#     print(" "*s-1,i," "*s-1)
+#     s = s - 1

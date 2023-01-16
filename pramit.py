@@ -93,12 +93,12 @@
 # your code goes here
 
 # import math
-# for i in range(1, 11):
-#     for j in range(i+1, 11):
+# for i in range(1, 100):
+#     for j in range(i+1, 100):
 #         a = i**2+j**2
 #         b = math.sqrt(a)
 #         if b - int(b) == 0:
-#             if b <= 10:
+#             if b <= 100:
 #                 print(i, j, int(b))
 
 
